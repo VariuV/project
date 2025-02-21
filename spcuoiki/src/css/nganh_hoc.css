@@ -1,0 +1,141 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #3671e4;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container chính */
+.container_content {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container_content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3671e4;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], 
+input[type="date"], 
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    background: #3671e4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #3b43a1;
+}
+
+/* Bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #3671e4;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Button trong bảng */
+table td button {
+    background: #ff5f5f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+table td button:hover {
+    background: #e04444;
+}
+.return{
+    position: absolute;
+    padding: 10px 20px; /* Đệm xung quanh chữ */
+    top: 200px;
+    left: 70px; /* Tùy chỉnh vị trí nếu cần */
+    background: #f9f9f9; /* Màu nền mặc định */
+    color: #333; /* Màu chữ */
+    text-align: center;
+    border: 1px solid #ddd; /* Viền mờ bao quanh */
+    border-radius: 5px; /* Bo góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    
+}
+.return:hover{
+    background: #3671e4; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Đổ bóng rõ hơn khi hover  */
+    border-radius: 5px;
+}

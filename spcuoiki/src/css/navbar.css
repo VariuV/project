@@ -1,0 +1,107 @@
+.navbar {
+    background: linear-gradient(90deg, #3671e4, #8f94fb);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: white;
+    text-decoration: none;
+   
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 20px;
+    font-size: 1em;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    display: none; /* Ẩn nút toggler vì tất cả thông tin nằm trên một dòng */
+}
+
+.nav-item.dropdown {
+    position: relative;
+    padding-right: 20px;
+}
+
+.nav-item .dropdown-menu {
+    display: none;
+    flex-direction: row; /* Hiển thị các mục trên một dòng */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa các mục */
+    align-items: center;
+    background: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 15px; /* Thêm đệm trong */
+    min-width: 200px;
+}
+
+.nav-item:hover .dropdown-menu {
+    display:block; /* Hiển thị menu khi hover */
+}
+
+.dropdown-item {
+    color: #333;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+    flex: 1; /* Để các mục chia đều không gian */
+    text-align: center; /* Căn giữa chữ */
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background: #3671e4;
+    color: white;
+    border-radius: 5px;
+}
+.dropdown-item:not(:last-child) {
+    margin-right: 10px; /* Thêm khoảng cách giữa các mục */
+}
+
+/* Responsive: co lại navbar khi màn hình nhỏ */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
