@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <meta name="viewport" content ="width=device-width, initial-scale =1">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>ILWD Admin</title>
+</head>
+<body onload="render()">
+    <section class="background">
+        <div class="bar">
+            <img src="photo/logo1.png" class="logo">
+            <ul>
+                <li class="nutthanh"><a href="logined.html">Trang chủ</a></li>
+                <li class="nutthanh"><a href="logined.html#home">Về chúng tôi</a></li>
+                <li class="nutthanh"><a href="logined.html#conntact">Liên lạc</a></li>
+                <li class="tenTK"><a href="#" id="myTk">Admin</a></li> 
+                <li class="tenTK"><i class='bx bxs-down-arrow'></i></li>
+                <div  class="logined">
+                    <div class="thongtin">
+                        <a href="#" class="xemtt">Thông tin</a> 
+                        <div class="ca-nhan">
+                            <label>Tên :</label>
+                            <p>Ngô Nhật Quân</p>
+                            <br>
+                            <label>Tài Khoản :</label>
+                            <p id="myTk1">admin</p>
+                            <br>
+                            <label>Email :</label>
+                            <p id="myEmail">jkaidh@gmail.com</p>
+                            <br>
+                            
+                        </div>
+                        <a href="index.html">Đăng xuất</a>
+                 </div>
+            </ul>
+        </div>
+    <br><br>
+    <div class="welcome">
+        <h1 id="loiChao">Chào mừng trở lại admin!</h1>
+        <p>Bạn đang có những yêu cầu:</p>
+    </div>
+    
+    <div>
+        <button type="button" onclick="danhsach4()">DANH SÁCH CÂU HỎI CÓ 4 ĐÁP AN</button>
+        <button type="button" onclick="danhsach2()">DANH SÁCH CÂU HỎI CÓ 2 ĐÁP AN</button>
+    </div>
+    <div id="ds4" style="display: none;" >
+        <h2>DANH SÁCH CÂU HỎI 4 ĐÁP ÁN:</h2>
+        <div>
+            <table id="table-content" cellpadding="10" cellspacing="0" border="3px"width=900>
+                <tr>
+                    <th>STT</th>
+                    <th>THỜI GIAN</th>
+                    <th>ND CÂU HỎI</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>ĐÁP ÁN</th>
+                    <th>TRẠNG THÁI</th>
+                    <TH>EDIT</TH>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <DIV id="ds2" style="display: none;">
+        <DIV>
+            <H2>DANH SÁCH CAU HỎI 2 ĐÁP ÁN:</H2>
+        </DIV>
+
+        <div>
+            <table id="table-content2" cellpadding="10" cellspacing="0" border="3px"width=900>
+                <tr>
+                    <th>STT</th>
+                    <th>THỜI GIAN</th>
+                    <th>ND CÂU HỎI</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>ĐÁP ÁN</th>
+                    <th>TRẠNG THÁI</th>
+                    <TH>EDIT</TH>
+                </tr>
+            </table>
+        </div>
+    </DIV>
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src ="jvs/admin.js"></script>
+</html>

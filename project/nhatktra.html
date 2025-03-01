@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/nhatktra.css" type="text/css">
+    <meta name="viewport" content ="width=device-width, initial-scale =1">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <section class="background">
+        <div class="bar">
+            <img src="photo/logo1.png" class="logo">
+            <ul>
+                <li class="nutthanh"><a href="logined.html">Trang chủ</a></li>
+                <li class="nutthanh"><a href="logined.html#home">Về chúng tôi</a></li>
+                <li class="nutthanh"><a href="logined.html#conntact">Liên lạc</a></li>
+                <li class="tenTK"><a href="#" id="myTk">Ten TK</a></li> 
+                <li class="tenTK"><i class='bx bxs-down-arrow'></i></li>
+                <div  class="logined">
+                    <div class="thongtin">
+                        <a href="#" class="xemtt">Thông tin</a> 
+                        <div class="ca-nhan">
+                            <label>Tên :</label>
+                            <p>Đào Ngọc Nhật</p>
+                            <br>
+                            <label>Tài Khoản :</label>
+                            <p id="myTk1">dont know</p>
+                            <br>
+                            <label>Email :</label>
+                            <p id="myEmail">dont know as well</p>
+                            <br>
+                            <label>Ngày lập :</label>
+                            <p id="createDate">dateeeee</p>
+                        </div>
+                        <a href="index.html">Đăng xuất</a>
+                 </div>
+            </ul>
+        </div>
+    
+    <br><br>   <br><br> 
+
+            <div class="option" style="display: block;">
+                <label>Chọn loại Option :</label>
+                <button type="button" onclick="but1()" >Option 4 đáp án</button>
+                <button type="button" onclick="but2()">Option 2 đáp án</button>
+            </div>
+    <div class="div1" style="display: none;" id="div1">
+        
+            <div class="form-group">
+                <label>Nhập câu hỏi:</label>
+                <input type="text" id="hoi">   
+                <div class="cach"></div>
+                <label>Nhập câu trả lời :</label>
+            </div>
+
+           <div class="vitri">
+            <div class="form-group">
+
+                <div class="cach"></div>
+                <input type="text" id="dapan-a" placeholder="Đáp án A">
+                    <div class="cach"></div>
+                <input type="text" id="dapan-b" placeholder="Đáp án B">
+                    <div class="cach"></div>
+                <input type="text" id="dapan-c" placeholder="Đáp án C">
+                    <div class="cach"></div>
+                <input type="text" id="dapan-d" placeholder="Đáp án D">
+                    <div class="cach"></div>
+                <input type="text"  id="dapan-dung" placeholder="Đáp án đúng">
+                    <p style="display: none;"></p>
+
+                <input type="hidden" id="index">
+                <div class="cach"></div>
+
+            </div>
+
+            <div class="form-group">
+                <button onclick="iteamtable()" id="gui" style="display: block;">gửi</button>
+                <button onclick="changestudent()" id="update" style="display: none;">Update</button>
+            </div>
+
+
+           </div>
+
+           <div class="bang">
+            <table cellpadding="10" cellspacing="0" border="2px"  width=900 id="table-content">
+                <tr>
+                    <th>STT</th>
+                    <th>THỜI GIAN</th>
+                    <th>ND CÂU HỎI</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>ĐÁP ÁN</th>
+                    <TH>EDIT</TH>
+                </tr>
+            </table>
+           </div>
+           <button type="button" id="quaylai" onclick="quaylai()">QUAY LẠI</button>     
+    </div>
+    
+
+    <!-- option 2 đáp án -->
+
+    <div class="div1" style="display: none;" id="div2">
+        
+        <div class="form-group">
+            <label>Nhập câu hỏi:</label>
+            <input type="text" id="hoi2">   
+            <div class="cach"></div>
+            <label>Nhập câu trả lời :</label>
+        </div>
+
+       <div class="vitri">
+        <div class="form-group">
+
+            <div class="cach"></div>
+            <input type="text" id="dapan-a2" placeholder="Đáp án A">
+                <div class="cach"></div>
+            <input type="text" id="dapan-b2" placeholder="Đáp án B">
+                <div class="cach"></div>
+            <input type="text"  id="dapan-dung2" placeholder="Đáp án đúng">
+                <p style="display: none;"></p>
+
+            <input type="hidden" id="index2">
+            <div class="cach"></div>
+
+        </div>
+
+        <div class="form-group">
+            <button onclick="iteamtable2()" id="gui2" style="display: block;">gửi</button>
+            <button onclick="changestudent2()" id="update2" style="display: none;">Update</button>
+        </div>
+
+
+       </div>
+
+       <div class="bang">
+        <table cellpadding="10" cellspacing="0" border="2px" width=900 id="table-content2">
+            <tr>
+                <th>STT</th>
+                <th>THỜI GIAN</th>
+                <th>ND CÂU HỎI</th>
+                <th>A</th>
+                <th>B</th>
+                <th>ĐÁP ÁN</th>
+                <TH>EDIT</TH>
+            </tr>
+        </table>
+       </div>
+       <button type="button" id="quaylai2" onclick="quaylai()">QUAY LẠI</button> 
+</div>
+    
+</body>
+<script type="text/javascript" src="jvs/nhatktra.js"></script>
+</html>
